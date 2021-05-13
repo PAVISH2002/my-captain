@@ -3,7 +3,7 @@ int main()
 {
 	printf("The food items are\nFood item - Pizza\nPrice - Rs 239\nFood item - Burger\nPrice - Rs 129\nFood item - Pasta\nPrice - Rs 179\nFood item - French Fries\nPrice - Rs 99\nFood item - Sandwich\nPrice - Rs 149\n");
 	int choice;
-	scanf("%d",choice);
+	scanf("%d",&choice);
 	switch(choice)
 	   {
 	   case 1:
