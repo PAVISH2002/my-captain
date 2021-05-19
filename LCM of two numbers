@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int LCM(int a, int b );
+int LCM(int a, int b)
+{
+    static int div=1;
+	if(div%a==0 && div%b==0)
+	{
+		return div;
+	}
+	else
+	{
+		div++;
+	  LCM(a,b);
+		return div;
+	}
+}
+int main()
+{
+	int a,b,L;
+	printf("Enter the two numbers ");
+	scanf("%d%d",&a,&b);
+	L=LCM(a,b);
+	printf("the LCM for the given numbers is =%d",L);
+	return 0;
+}
