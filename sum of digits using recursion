@@ -1,0 +1,21 @@
+#include<stdio.h>
+int sum(int n);
+int sum(int n)
+{
+	int i,rem,sum = 0;
+	for(i=n;i>0;i=i/10)
+	{
+		rem=i%10;
+		sum=sum+rem;
+		
+	}
+	return sum;
+}
+int main()
+{
+	int  s, n;
+	printf("Enter the number :");
+	scanf("%d",&n);
+	s=sum(n);
+	printf("The sum is : %d",s);
+}
